@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <File Path="../src/Directory.Build.props" />
+    <Project Path="../src/Cirreum.Cache.Distributed/Cirreum.Cache.Distributed.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <File Path="Directory.Build.props" />
+    <Project Path="Cirreum.Cache.Distributed.Tests/Cirreum.Cache.Distributed.Tests.csproj" />
+  </Folder>
+</Solution>
