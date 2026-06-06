@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>The Cirreum Distributed caching implementation for Conductor Cacheable Queries.</Description>
+		<PackageTags>cirreum;conductor;cache;cqrs</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Code-first cache provider: references Cirreum.Domain for AddCacheService + the cache
+		     abstractions (ICacheService / CacheExpirationPolicy). Contracts/Kernel flow transitively via Domain. -->
+		<PackageReference Include="Cirreum.Domain" Version="1.1.1" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="10.0.8" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Cirreum.Caching" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Cirreum.Cache.Distributed.Tests" />
+	</ItemGroup>
+
+</Project>
